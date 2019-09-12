@@ -1,6 +1,6 @@
-const ethers = require("ethers");
-const _ = require("lodash");
-const fetchGasSettings = require("airswap.js/src/gas");
+import * as ethers from "ethers";
+import _ from "lodash";
+import fetchGasSettings from "airswap.js/src/gas";
 
 class Gas {
   constructor() {
@@ -33,4 +33,4 @@ class Gas {
 
 const gas = new Gas();
 
-module.exports = gas;
+export default gas;
